@@ -1,0 +1,15 @@
+SPEC-REL-09: Document Workspace v1 Release Specification
+
+1. Functional Scope
+- Supports uploading PDF and plain-text documents up to 15 MB.
+- Answers user questions using retrieved document passages and displays source references.
+- Evaluates user-provided checklist items against document content.
+
+2. Security & Configuration
+- API keys must be loaded from environment variables and never exposed on the client.
+- Uploaded files must be validated by extension and size before parsing.
+
+3. Release Readiness Criteria
+- Core upload, Q&A, and checklist endpoints pass smoke tests.
+- Unreadable or empty files return clear HTTP 400/422 error messages rather than crashing.
+- Known limitations (such as scanned image-only PDFs without OCR) are documented.

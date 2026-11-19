@@ -1,0 +1,16 @@
+SOP-INC-04: Production Incident Response & Escalation
+Version: 1.2 | Owner: Platform Reliability Team
+
+1. Severity Classification
+- SEV-1 (Critical): Complete outage or core workflow failure affecting >25% of users. Target response: 15 minutes. Escalate to On-Call Lead immediately.
+- SEV-2 (High): Degraded performance or partial feature failure. Target response: 1 hour.
+- SEV-3 (Medium): Minor bug or non-critical workflow issue with workaround. Target response: 8 hours.
+
+2. Incident Commander & Communication
+- For SEV-1 incidents, an Incident Commander (IC) must be assigned within 15 minutes.
+- Status updates must be posted every 30 minutes until resolution.
+- Post-incident root cause analysis (RCA) must be published within 48 hours of closure.
+
+3. Rollback & Escalation Rules
+- If a recent deployment correlates with the incident, initiate rollback before deep root-cause debugging.
+- If a SEV-1 is unresolved after 60 minutes, escalate to Engineering Manager.
