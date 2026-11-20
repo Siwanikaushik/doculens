@@ -1,14 +1,22 @@
+# Python & Backend
 backend/venv/
-backend/__pycache__/
-*.py[cod]
-*.egg-info/
+venv/
+__pycache__/
+*.pyc
 .env
 backend/.env
 backend/uploads/
 backend/data/
+
+# Node & Frontend
 frontend/node_modules/
+node_modules/
 frontend/dist/
-frontend/.env.local
+dist/
+*.log
+
+# OS / Editor
 .DS_Store
 Thumbs.db
-.vscode/
+.vscode/*
+!.vscode/extensions.json
